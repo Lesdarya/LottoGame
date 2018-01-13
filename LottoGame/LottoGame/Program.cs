@@ -12,6 +12,7 @@ namespace LotoGame
             var filling = card.GetFilling();
             ViewCard.DrawCardInConsole(card);
 
+            //blablalba
             Console.ReadKey();
         }
     }
