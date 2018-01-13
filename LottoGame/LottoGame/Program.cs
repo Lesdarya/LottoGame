@@ -6,7 +6,7 @@ namespace LottoGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! Byme");
+            Console.WriteLine("Hello World from Visual studio!");
         }
     }
 }
