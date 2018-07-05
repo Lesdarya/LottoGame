@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Model.Game.Session;
+using System;
 
 namespace Core.Lotto
 {
@@ -25,9 +26,11 @@ namespace Core.Lotto
             int totalNumbersCount = 0;
 
             var rnd = new Random();
+            var valueGenearator = new BarrelValueGenerator();
             while (totalNumbersCount < cardInfo.MaxInCard)
             {
-                var randomNumber = rnd.Next(1, 90);
+                //var randomNumber = rnd.Next(1, 90);
+                var randomNumber = valueGenearator.GetNext();
                 // Finding column
                 var tmpColumn = randomNumber / 10;
                 // Checking if there no other same number and checkin max number in column
@@ -53,8 +56,8 @@ namespace Core.Lotto
         /// <returns>True, if we can insert</returns>
         private bool CheckInsertIntoColumn(ICardInfo cardInfo, int columnNumber, int number)
         {
-            if (columnNumber > cardInfo.RowsNumber)
-                columnNumber = cardInfo.RowsNumber;
+            if (columnNumber >= cardInfo.ColumnsNumber)
+                columnNumber = cardInfo.ColumnsNumber-1;
             var countFilledNumbers = 0;
             for (int i = 0; i < cardInfo.RowsNumber; i++)
             {

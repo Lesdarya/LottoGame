@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoGame", "LottoGame\LottoGame.csproj", "{D5D12FEF-94B5-4C0C-88AE-86C11F0968F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{E4DC04AE-445F-422D-85F6-2183650814DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{E4DC04AE-445F-422D-85F6-2183650814DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamingForm", "GamingForm\GamingForm.csproj", "{ADE17DCE-8758-4244-87C8-EE418E460F97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{E4DC04AE-445F-422D-85F6-2183650814DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4DC04AE-445F-422D-85F6-2183650814DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4DC04AE-445F-422D-85F6-2183650814DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE17DCE-8758-4244-87C8-EE418E460F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE17DCE-8758-4244-87C8-EE418E460F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE17DCE-8758-4244-87C8-EE418E460F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE17DCE-8758-4244-87C8-EE418E460F97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB9120CC-5D20-490F-855D-F42913902F51}
 	EndGlobalSection
 EndGlobal

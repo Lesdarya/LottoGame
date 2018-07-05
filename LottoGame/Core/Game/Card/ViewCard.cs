@@ -17,7 +17,7 @@ namespace Core.Lotto
                 {
                     for(int j = 0; j < lotoCard.CardInfo.ColumnsNumber; j++)
                     {
-                        Console.Write((lotoCard.CardFilling.Numbers[i, j] == 0 ? "_" : lotoCard.CardFilling.Numbers[i, j].ToString()) + " ");
+                        Console.Write((lotoCard.CardFilling.Numbers[i, j] == 0 ? "__" : lotoCard.CardFilling.Numbers[i, j].ToString()) + " ");
                     }
                     Console.WriteLine();
                 }
