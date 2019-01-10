@@ -17,7 +17,9 @@ namespace Core.Lotto
                 {
                     for(int j = 0; j < lotoCard.CardInfo.ColumnsNumber; j++)
                     {
-                        Console.Write((lotoCard.CardFilling.Numbers[i, j] == 0 ? "__" : lotoCard.CardFilling.Numbers[i, j].ToString()) + " ");
+                        var tmpNumber = lotoCard.CardFilling.Numbers[i, j];
+                        Console.Write((tmpNumber == 0 ? "__" : 
+                            ((tmpNumber > 9 ? "" : "0") + tmpNumber.ToString())) + " " );
                     }
                     Console.WriteLine();
                 }

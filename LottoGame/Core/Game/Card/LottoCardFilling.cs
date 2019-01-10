@@ -34,7 +34,7 @@ namespace Core.Lotto
                 // Finding column
                 var tmpColumn = randomNumber / 10;
                 // Checking if there no other same number and checkin max number in column
-                if (CheckInsertIntoColumn(cardInfo, tmpColumn, randomNumber))
+                if (CheckInsertIntoColumn(cardInfo, ref tmpColumn, randomNumber))
                 {
                     //Getting row, where filled not max number in row
                     var tmpRow = GetNotFullFilledRow(cardInfo, tmpColumn);
@@ -54,7 +54,7 @@ namespace Core.Lotto
         /// <param name="columnNumber">Column, where we want insert number</param>
         /// <param name="number">Inserting number</param>
         /// <returns>True, if we can insert</returns>
-        private bool CheckInsertIntoColumn(ICardInfo cardInfo, int columnNumber, int number)
+        private bool CheckInsertIntoColumn(ICardInfo cardInfo, ref int columnNumber, int number)
         {
             if (columnNumber >= cardInfo.ColumnsNumber)
                 columnNumber = cardInfo.ColumnsNumber-1;
